@@ -30,6 +30,8 @@ public class Game {
 		if (pick == null) throw new IllegalArgumentException("Pick cannot be negative.");
 		if (bet < 0) throw new IllegalArgumentException("Bet cannot be negative.");
 		
+		
+		
 		player.takeBet(bet);
 
 		//new code for bugFix
