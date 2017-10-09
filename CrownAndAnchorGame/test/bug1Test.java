@@ -22,10 +22,7 @@ public class bug1Test {
 	
 	@Before
 	public void setUp() throws Exception {
-		
-		
-		
-		
+
 	}
 	
 	//pick is what the player roles, our dice object then can be mocked maybe. 
