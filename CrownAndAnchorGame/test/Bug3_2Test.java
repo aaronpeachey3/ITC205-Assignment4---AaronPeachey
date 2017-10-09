@@ -41,5 +41,6 @@ public class Bug3_2Test {
 		
 		
 	}
+	//bug3.2 and bug3.1 solving also solves the overall Bug3
 
 }
