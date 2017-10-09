@@ -25,7 +25,7 @@ public class bug3_1Test {
 		//specifically looking at the Dice method not changing the current value state
 		
 		//since we are looking at randomized numbers we need to run this test many times to make sure it isnt just 
-		//chance that is making the v
+		//chance that is making the values stay the same. 
 		
 		sut = new Dice();
 		
@@ -33,7 +33,7 @@ public class bug3_1Test {
 		sut.roll();
 		DiceValue value2 = sut.getValue();
 		
-		assertEquals(value, value2);
+		assertFalse(value.equals(value2));
 		
 		
 	}
