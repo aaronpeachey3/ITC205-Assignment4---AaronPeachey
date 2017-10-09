@@ -32,6 +32,8 @@ public class Game {
 		
 		player.takeBet(bet);
 
+		//new code for bugFix
+		int winnings = 0;
 		int matches = 0;
 		for ( Dice d : dice) {
 			d.roll();
@@ -39,9 +41,10 @@ public class Game {
 				matches += 1;
 			}
 		}
+		if (matches > 0) {
+		winnings = bet + matches * bet;
 
-		int winnings = matches * bet;
-
+		}
 		
 		if (matches > 0) {			
 			player.receiveWinnings(winnings);
