@@ -37,6 +37,14 @@ public class bug2Test {
 		//amount = 10
 		//result should be true still, since balance can equal 0 but not go below
 		result = sut.balanceExceedsLimitBy(10);
+		assertTrue(result == true);
+		
+		
+		//balance = 10
+		//limit = 0
+		//amount = 15
+		//result should be true still, since balance can equal 0 but not go below
+		result = sut.balanceExceedsLimitBy(15);
 		assertFalse(result == true);
 
 	}
